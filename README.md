@@ -1,2 +1,58 @@
-# Maximum-grid-walk-
-Four traversals on a 2-Dimensional matrix without jumping from one end to other end.
+# Maximum-grid-walk
+You are given a M by N grid each entry representing a number.
+Example Grid:
+10 11 12
+13 14 15
+16 17 18
+19 20 21
+1) RLR grid walk starting from left top:
+   * 10->11->12->rev(15)->rev(14)->rev(13)->16->17->18->rev(21)->rev(20)->rev(19) 
+ 
+   * number you get is 101112514131161718120291 
+
+2) DUD walk starting from left top:
+   * 10->13->16->19->rev(20)->rev(71)->rev(41)->rev(11)->12->15->18->21   
+
+   * The number you get is 101316190271411112151821 
+
+3) LRL walk starting from right bottom:
+   * rev(21)->rev(20)->rev(19)->16->17->18->rev(15)->rev(14)->rev(13)->10->11->12 
+ 
+   * The number you get is 120291161718514131101112   
+ 
+4) UDU walk starting from right bottom:
+  * rev(21)->rev(18)->rev(15)->rev(12)->rev(11)->14->17->rev(20)->rev(19)->rev(16)->rev(13)->rev(10) 
+  
+  * The number you get is 128151211114170291613101
+
+example : rev(456)=654
+
+Input format:
+you are given with the dimension of the grid in the first line : "3 2"
+second line : 1 2
+third line  : 3 4
+fourth line : 5 6
+
+Therefore you are given with 3 rows and 2 columns 
+
+Hence if you are given with "m n" in the first line then you will have a grid of m rows and n columns
+
+Output format:
+Print the maximum number you get from (LRL, DUD, RLR, UDU) walks
+
+514112131101  is the output for the input given in input format
+ 
+ Sample input:
+ 4 3 
+ 10  11  12 
+ 13  14  15
+ 16  17  18
+ 19  20  21 
+ 
+ Sample output:
+ 128151211114170291613101 
+ 
+ 
+ 
+ 
+ 
