@@ -1,4 +1,6 @@
 # Maximum-grid-walk
+Please view this in the raw view
+
 You are given a M by N grid each entry representing a number.
 Example Grid:
 10 11 12
@@ -21,9 +23,9 @@ Example Grid:
    * The number you get is 120291161718514131101112   
  
 4) UDU walk starting from right bottom:
-  * rev(21)->rev(18)->rev(15)->rev(12)->rev(11)->14->17->rev(20)->rev(19)->rev(16)->rev(13)->rev(10) 
+   * rev(21)->rev(18)->rev(15)->rev(12)->rev(11)->14->17->rev(20)->rev(19)->rev(16)->rev(13)->rev(10) 
   
-  * The number you get is 128151211114170291613101
+   * The number you get is 128151211114170291613101
 
 example : rev(456)=654
 
